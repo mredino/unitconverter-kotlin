@@ -1,6 +1,7 @@
 package com.mrdino.unitconverter
 //code submitted by student #219136915 for SIT708 Task 2.1P
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -94,150 +95,175 @@ class MainActivity : AppCompatActivity() {
                 val inputToString: String = getInputField?.text.toString()
                 val userInput: Double = inputToString.toDouble()
 
+
                 //conversion logic
                 if (fromUnit == "Inch" && toUnit == "Foot") {
                     result = (userInput * inchToFoot)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Inch" && toUnit == "Yard") {
                     result = (userInput * inchToYard)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Inch" && toUnit == "Mile") {
                     result = (userInput * inchToMile)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Foot" && toUnit == "Inch") {
                     result = (userInput * footToInch)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Foot" && toUnit == "Yard") {
                     result = (userInput * footToYard)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Foot" && toUnit == "Mile") {
                     result = (userInput * footToMile)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Yard" && toUnit == "Inch") {
                     result = (userInput * yardToInch)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Yard" && toUnit == "Foot") {
                     result = (userInput * yardToFoot)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Yard" && toUnit == "Mile") {
                     result = (userInput * yardToMile)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Mile" && toUnit == "Inch") {
                     result = (userInput * mileToInch)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Mile" && toUnit == "Foot") {
                     result = (userInput * mileToFoot)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Mile" && toUnit == "Yard") {
                     result = (userInput * mileToYard)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Pound" && toUnit == "Ounce") {
                     result = (userInput * poundToOunce)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Pound" && toUnit == "Ton") {
                     result = (userInput * poundToTon)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Ounce" && toUnit == "Pound") {
                     result = (userInput * ounceToPound)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Ounce" && toUnit == "Ton") {
                     result = (userInput * ounceToTon)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Ton" && toUnit == "Pound") {
                     result = (userInput * tonToPound)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Ton" && toUnit == "Ounce") {
                     result = (userInput * tonToOunce)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Celsius" && toUnit == "Fahrenheit") {
                     result = (userInput * celsiusToFahrenheit)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Celsius" && toUnit == "Kelvin") {
                     result = (userInput * celsiusToKelvin)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Fahrenheit" && toUnit == "Celsius") {
                     result = (userInput * fahrenheitToCelsius)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Fahrenheit" && toUnit == "Kelvin") {
                     result = (userInput * fahrenheitToKelvin)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Kelvin" && toUnit == "Celsius") {
                     result = (userInput * kelvinToCelsius)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else if (fromUnit == "Kelvin" && toUnit == "Fahrenheit") {
                     result = (userInput * kelvinToFahrenheit)
                     val roundResult = BigDecimal(result).setScale(2, RoundingMode.HALF_EVEN)
                     val resultToString = roundResult.toString()
                     outputField?.setText("$resultToString $toUnit")
+                    errorField?.setText("")
 
                 } else {
                     val errorMessage = "Error. Please check your input."
