@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">unitconverter</string>
+    <string name="Select_unit">Select unit</string>
+
+    <string-array name="unit_list">
+        <item>Inch</item>
+        <item>Foot</item>
+        <item>Yard</item>
+        <item>Mile</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+        <item>Ton</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>
